@@ -1,0 +1,89 @@
+.user {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 890px;
+    padding: 8px 30px;
+    &__meta {
+        text-align: center;
+        width: 25%;
+        background-color: #e0e0ff;
+        padding: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    &__avatar {
+        position: relative;
+        #avatar-checker,
+        #put-avatar {
+            position: absolute;
+            width: 0;
+            opacity: 0;
+        }
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+        + input {
+            margin-top: 1em;
+        }
+    }
+    &__info {
+        width: 72%;
+        align-self: normal;
+        background-color: #e0e0ff;
+        padding: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        &-item {
+            display: flex; 
+            p:first-child{
+                width: 22%;
+            }
+        }
+        &-data{
+            font-weight: 500;
+            cursor: pointer;
+            width: 50%;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+    &__chat {
+        width: 72%;
+        min-height: 320px;
+        align-self: normal;
+        background-color: #e0e0ff;
+        padding: 12px;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__write-box {
+        textarea {
+            resize: none;
+            width: 75%;
+            height: 100px;
+        }
+    }
+    &__messages {
+        .mine {
+            text-align: end;
+        }
+    }
+    &__next {
+        color: black;
+        text-decoration: none;
+        background: #eee;
+        padding: 4px;
+        border: 1px solid;
+        border-radius: 6px;
+        display: block;
+        margin-top: 1em;
+    }
+}

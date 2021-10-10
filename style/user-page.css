@@ -1,0 +1,106 @@
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 890px;
+  padding: 8px 30px;
+}
+.user__meta {
+  text-align: center;
+  width: 25%;
+  background-color: #e0e0ff;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.user__avatar {
+  position: relative;
+}
+.user__avatar #avatar-checker,
+.user__avatar #put-avatar {
+  position: absolute;
+  width: 0;
+  opacity: 0;
+}
+.user__avatar img {
+  width: 100%;
+  cursor: pointer;
+}
+.user__avatar + input {
+  margin-top: 1em;
+}
+.user__info {
+  width: 72%;
+  -ms-flex-item-align: normal;
+      -ms-grid-row-align: normal;
+      align-self: normal;
+  background-color: #e0e0ff;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.user__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user__info-item p:first-child {
+  width: 22%;
+}
+.user__info-data {
+  font-weight: 500;
+  cursor: pointer;
+  width: 50%;
+}
+.user__info-data:hover {
+  font-weight: bold;
+}
+.user__chat {
+  width: 72%;
+  min-height: 320px;
+  -ms-flex-item-align: normal;
+      -ms-grid-row-align: normal;
+      align-self: normal;
+  background-color: #e0e0ff;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.user__write-box textarea {
+  resize: none;
+  width: 75%;
+  height: 100px;
+}
+.user__messages .mine {
+  text-align: end;
+}
+.user__next {
+  color: black;
+  text-decoration: none;
+  background: #eee;
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 6px;
+  display: block;
+  margin-top: 1em;
+}
